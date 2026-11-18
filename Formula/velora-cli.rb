@@ -1,15 +1,15 @@
 class VeloraCli < Formula
   desc "The Velora terminal app — agents, missions, and automations from your shell"
   homepage "https://runvelora.app"
-  version "3.0.0-beta.43"
+  version "3.0.0-beta.44"
   license "Unlicense"
 
   if Hardware::CPU.arm?
     url "https://github.com/Mehxeo/Velora/releases/download/v#{version}/velora-cli-macos-arm64.zip"
-    sha256 "56c557d85a0485369cdc0182f7aba11e366184a3127161d04c901047569d7cc5"
+    sha256 "f342c1679bb5ba10e8c9b97a0526359f9f184fb4e209c1668123783bab1d8e02"
   else
     url "https://github.com/Mehxeo/Velora/releases/download/v#{version}/velora-cli-macos-x64.zip"
-    sha256 "9a4adac5c94ac00995274876c4e8746ad18794dfc9d6dee4f92c39b0e3077812"
+    sha256 "730efaec3f188e30764acbf8829458659ae1f9909f8777c752d6c2f1b670f4bf"
   end
 
   def install
